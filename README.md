@@ -1,6 +1,9 @@
 # Github pages Vuex Starter
 
-This project generates a vuex app into ```/docs``` to be served with github pages 
+This project generates a vuex app into ```/docs``` to be served with github pages.
+This demo implements a rudimentary CMS
+
+by [Max R. Eckardt](https://github.com/mehimself) 
 
 ## App Layout
 Pages are mapped onto six pages of a cube. The cube turns to the page you navigate to. Each page is its own component. 
@@ -8,6 +11,12 @@ Urls and components are mapped in
 
 ```angular2
 /src/router.js
+```
+
+Explore additional settings for i.e. font-scaling in 
+
+```angular2
+/src/store/state.js
 ```
 
 ## Texts
@@ -30,14 +39,19 @@ Here you also find an array for the slides at the top of the page, if any.
 
 The .body attributes in state.js accept HTML
 
+---
 ##### _Quotation Marks_
 
-There are three types of quotation marks for strings:
+wThere are three types of quotation marks for strings:
   - single quote ' holds a single line of string and can be escaped with \
   - double quotes " are equivalent to ' and conventient for single line strings
   - the new ` allows for complex strings that span over multiple lines without and even supports ${embedded expressions}
 
+---
+
 ## Build Setup
+
+This build requires NodeJS v10.16.0. It is not yet compatible with newer Node versions.
 
 ``` bash
 # install dependencies

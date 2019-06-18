@@ -8,8 +8,9 @@
           <v-card>
             <v-card-title>
               <h2 class="text-xs-center">
-                <span v-if="$vuetify.breakpoint.sm">CHCAA</span>
-                <span v-else>Center for Humanities Computing Aarhus</span>
+                <span v-if="$vuetify.breakpoint.smAndDown">App Name</span>
+                <span v-else>Full Application Name</span>
+                -
                 Events
               </h2>
             </v-card-title>

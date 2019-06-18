@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Github pages vuex starter",
   "author": "Max Roald Eckardt <mr.eckardt@gmail.com>",
-  "private": true,
+  "private": false,
+  "license": "AGPLv3",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -11,7 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "firebase": "^5.8.2",
+    "firebase": "^5.11.1",
     "lodash": "latest",
     "moment": "^2.24.0",
     "swiper": "^4.4.6",

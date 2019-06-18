@@ -5,7 +5,7 @@
         <v-flex>
           <v-card>
             <v-card-title>
-            <h1>Contact the Center for Humanities Computing Aarhus</h1>
+            <h1>Contact somebody</h1>
             </v-card-title>
             <v-card-text>
               <v-form
@@ -30,7 +30,7 @@
                 <v-text-field
                   label="Subject"
                   required
-                  prefix="@CHCAA: "
+                  prefix="@App/Contact: "
                   name="subject"
                 ></v-text-field>
                 <div id="gotcha">
@@ -65,7 +65,6 @@ export default {
   name: 'Contact',
   data() {
     return {
-      targetAddress: 'kln@cas.au.dk',
       valid: false,
       name: '',
       nameRules: [
@@ -75,17 +74,12 @@ export default {
       emailRules: [
         (v) => !!v || 'E-mail is required',
         (v) => /^[^@]+@[^@]+\.[^@]+$/.test(v) || 'E-mail must be valid'
-      ],
-      subject: '',
-      subjectRules: [
-        (v) => !!v || 'Subject is required',
-        (v) => /^@CHCAA: /.text(v) || 'Subject has to start with "@CHCAA: "'
       ]
     }
   },
   computed: {
     contactUrl() {
-      return `https://formspree.io/${this.targetAddress}`
+      return `https://formspree.io/${this.$store.state.contactEmailAddress}`
     }
   }
 }

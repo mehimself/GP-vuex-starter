@@ -17,30 +17,15 @@
         </v-btn>
       </v-toolbar-items>
       <v-toolbar-title
-        title="Aarhus University - Faculty of Arts"
+        title="Your Application Name"
       >
         <a
-          href="http://arts.au.dk/en/"
-          target="_blank"
+          href="/#"
         >
           <v-img
-            src="AU.png"
-            :class="{unilogo: shrinkage >= 10}"
+            :src="logoUrl"
+            :class="{logo: shrinkage >= 10}"
             :height="shrinkage > 8 ? 25 : 50"
-            :width="shrinkage > 8 ? 50 : 100"></v-img>
-        </a>
-      </v-toolbar-title>
-      <v-toolbar-title
-        v-show="shrinkage < 10"
-        class="unilogo"
-        title="Aarhus University - Faculty of Arts"
-      >
-        <a
-          href="http://arts.au.dk/en/"
-          target="_blank"
-        >
-          <v-img
-            src="aarhusUniversity.png"
             :width="shrinkage > 8 ? 50 : 100"></v-img>
         </a>
       </v-toolbar-title>
@@ -55,12 +40,12 @@
           v-show="shrinkage < 9"
         >
           <span v-if="shrinkage >= 8">
-            Center for Humanities Computing
+            Medium Length App Title
           </span>
           <span
             v-else
           >
-            Center for Humanities Computing Aarhus
+            App Title in its full length and glory
           </span>
         </v-btn>
         <v-btn
@@ -69,7 +54,7 @@
           :class="{active: $route.path === '/'}"
           v-show="shrinkage >= 9"
         >
-          CHCAA
+          Appreviation
         </v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
@@ -149,7 +134,6 @@ export default {
         {title: 'Services', url: '/services', icon: 'widgets', deflateAt: 6},
         {title: 'Workshop', url: '/workshop', icon: 'build', deflateAt: 5},
         {title: 'Resources', url: '/resources', icon: 'extension', deflateAt: 4},
-        {title: 'Events', url: '/events', icon: 'date_range', deflateAt: 3},
         {title: 'People', url: '/people', icon: 'people', deflateAt: 2},
         {title: 'Contact', url: '/contact', icon: 'mail', deflateAt: 1},
       ]
@@ -161,6 +145,9 @@ export default {
     },
     path() {
       return this.$router.currentRoute.name
+    },
+    logoUrl() {
+      return this.$store.state.logoUrl
     }
   },
   methods: {
@@ -209,7 +196,7 @@ export default {
     color: white !important;
     background-color: rgb(0, 37, 70) !important;
   }
-  .unilogo {
+  .logo {
     margin-right: 1em;
   }
   .active {

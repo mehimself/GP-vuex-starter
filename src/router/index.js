@@ -44,29 +44,9 @@ const router = new Router({
       component: () => import('../components/Resources.vue')
     },
     {
-      path: '/danishCorpus',
-      name: 'danishCorpus',
-      component: () => import('../components/DanishCorpus.vue')
-    },
-    {
-      path: '/stopWords',
-      name: 'stopWords',
-      component: () => import('../components/StopWords.vue')
-    },
-    {
-      path: '/events',
-      name: 'events',
-      component: () => import('../components/Events.vue')
-    },
-    {
       path: '/people',
       name: 'people',
       component: () => import('../components/People/People.vue')
-    },
-    {
-      path: '/stream',
-      name: 'stream',
-      component: () => import('../components/Stream.vue')
     },
     {
       path: '/links',
@@ -92,11 +72,13 @@ const router = new Router({
 })
 const boxFaces = ['front', 'back', 'right', 'left', 'top', 'bottom']
 const pathFaces = {
+  /*
+   * Bind selected routes to specific cube faces here
+   */
   '/': 'front',
   '/portfolio': 'left',
   '/services': 'back',
   '/people': 'right',
-  '/events': 'bottom',
   '/workshop': 'top'
 }
 
