@@ -15,6 +15,7 @@
     "firebase": "^5.11.1",
     "lodash": "latest",
     "moment": "^2.24.0",
+    "open": "^6.3.0",
     "swiper": "^4.4.6",
     "velocity-animate": "^1.5.2",
     "vue": "^2.5.2",
@@ -68,8 +69,8 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "webpack-dev-server": "^2.9.1"
   },
   "engines": {
     "node": ">= 6.0.0",

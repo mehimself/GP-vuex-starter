@@ -42,7 +42,7 @@ The .body attributes in state.js accept HTML
 ---
 ##### _Quotation Marks_
 
-wThere are three types of quotation marks for strings:
+There are three types of quotation marks for strings:
   - single quote ' holds a single line of string and can be escaped with \
   - double quotes " are equivalent to ' and conventient for single line strings
   - the new ` allows for complex strings that span over multiple lines without and even supports ${embedded expressions}
@@ -51,7 +51,7 @@ wThere are three types of quotation marks for strings:
 
 ## Build Setup
 
-This build requires NodeJS v10.16.0. It is not yet compatible with newer Node versions.
+This build requires NodeJS v10.16.0 ([instructions](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/))
 
 ``` bash
 # install dependencies
@@ -59,7 +59,7 @@ npm install
 
 # serve (webpack-dev-server) with hot reload at localhost:8080
 # has some security issues, run it locally
-npm run dev
+npm start
 
 # build for hosting by jekyll from /docs
 npm run build
