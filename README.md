@@ -1,7 +1,7 @@
 # Github pages Vuex Starter
 
 This project generates a vuex app into ```/docs``` to be served with github pages.
-This demo implements a rudimentary CMS
+[This demo implements a rudimentary static website](https://mehimself.github.io/GP-vuex-starter/)
 
 by [Max R. Eckardt](https://github.com/mehimself) 
 
