@@ -4,9 +4,6 @@ node_modules/
 # app keys
 config/secret/
 
-# generated files
-docs/
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
