@@ -14,7 +14,7 @@
   "dependencies": {
     "firebase": "^5.11.1",
     "lodash": "latest",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "open": "^6.3.0",
     "swiper": "^4.4.6",
     "velocity-animate": "^1.5.2",
